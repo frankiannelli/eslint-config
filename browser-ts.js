@@ -2,13 +2,6 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   extends: ['./index', '@typescript-eslint'],
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    },
-  },
   env: {
     browser: true,
   },
@@ -42,6 +35,7 @@ module.exports = {
     'import/resolver': {
       node: {
         paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
   },
