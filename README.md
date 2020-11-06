@@ -33,3 +33,11 @@ Server config add this configuration to your `package.json`:
   }
 }
 ```
+
+## Publishing
+
+`git tag v2.0.1`
+
+`git push origin --tags`
+
+go to git hub and release with the same version number
