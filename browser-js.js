@@ -1,4 +1,5 @@
 module.exports = {
+  parser: 'babel-eslint',
   extends: ['./index'].map(require.resolve),
   env: {
     browser: true,
