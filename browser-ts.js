@@ -1,7 +1,7 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  extends: ['./index', '@typescript-eslint'],
+  extends: ['./index', 'plugin:@typescript-eslint/recommended'],
   env: {
     browser: true,
   },
@@ -19,6 +19,10 @@ module.exports = {
         ts: 'never',
         tsx: 'never',
       },
+    ],
+    'react/jsx-filename-extension': [
+      2,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
     'jsx-a11y/label-has-for': [
       'error',
