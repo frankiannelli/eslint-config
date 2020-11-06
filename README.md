@@ -14,12 +14,12 @@ Specify the tagged version of the config to install
 }
 ```
 
-Browser config add this configuration to your `package.json`:
+Browser TS config add this configuration to your `package.json`:
 
 ```json
 {
   "eslintConfig": {
-    "extends": "./node_modules/eslint-config/browser.js"
+    "extends": "./node_modules/eslint-config/browser-ts.js"
   }
 }
 ```
